@@ -24,6 +24,19 @@ class MainActivity:AppCompatActivity(){
         setContentView(binding.root)
 
         var data=listOf(SearchData("test","test","test","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("엘리시움","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("마라탕","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("고기","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("갈비","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
+            SearchData("test2","test2","test2","test"),
             SearchData("test2","test2","test2","test")
         )
 
