@@ -40,13 +40,15 @@
 
                 */
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView"
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    itemSpace="@dimen/_1pxh" tools:itemCount="11" tools:listitem="@layout/search_item"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                itemSpace="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="11"
+                tools:listitem="@layout/search_item" />
 
         </LinearLayout>
     </LinearLayout>

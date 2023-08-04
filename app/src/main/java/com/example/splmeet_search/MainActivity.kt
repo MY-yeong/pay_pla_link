@@ -23,6 +23,9 @@ class MainActivity:AppCompatActivity(){
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val mActionBar=supportActionBar
+        mActionBar!!.hide()
+
         var data=listOf(SearchData("test","test","test","test"),
             SearchData("test2","test2","test2","test"),
             SearchData("엘리시움","test2","test2","test"),
