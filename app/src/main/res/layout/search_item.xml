@@ -24,7 +24,7 @@
             android:layout_marginTop="@dimen/_30pxv"
             android:layout_weight="0.57" android:layout_width="0dp" android:orientation="vertical">
             <TextView android:ellipsize="end"
-                android:id="@+id/name"
+                android:id="@+id/text_species"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
                 android:text="@{data.name}"
                 style="@style/txtPretendardbold20" tools:text="@string/lbl19"/>
             <TextView android:ellipsize="end"
-                android:id="@+id/intro"
+                android:id="@+id/text_name"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_4pxv"

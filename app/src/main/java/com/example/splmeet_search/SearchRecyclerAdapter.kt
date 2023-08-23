@@ -1,14 +1,22 @@
 package com.example.splmeet_search
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.splmeet_search.databinding.SearchItemBinding
 
 class SearchRecyclerAdapter (private val itemList: List<SearchData>):RecyclerView.Adapter<SearchRecyclerAdapter.MyViewHolder>(){
-    inner class MyViewHolder(val binding: SearchItemBinding):RecyclerView.ViewHolder(binding.root){
+    inner class MyViewHolder(private val binding: SearchItemBinding):RecyclerView.ViewHolder(binding.root){
+        private val context=binding.root.context
+
         fun bind(item: SearchData){
             binding.data=item
+            itemView.setOnClickListener {
+                val intent = Intent(context, NoticeDetailActivity::class.java)
+                intent.putExtra("data", item)
+                intent.run { context.startActivity(this) }
+            }
         }
     }
 
