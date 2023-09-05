@@ -13,7 +13,7 @@ class SearchRecyclerAdapter (private val itemList: List<SearchData>):RecyclerVie
         fun bind(item: SearchData){
             binding.data=item
             itemView.setOnClickListener {
-                val intent = Intent(context, NoticeDetailActivity::class.java)
+                val intent = Intent(context, place_info::class.java)
                 intent.putExtra("data", item)
                 intent.run { context.startActivity(this) }
             }
