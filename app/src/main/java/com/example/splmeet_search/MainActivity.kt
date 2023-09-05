@@ -26,21 +26,17 @@ class MainActivity:AppCompatActivity(){
         val mActionBar=supportActionBar
         mActionBar!!.hide()
 
-        var data=listOf(SearchData("test","test","test","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("엘리시움","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("마라탕","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("고기","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("갈비","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("test2","test2","test2","test"),
-            SearchData("test2","test2","test2","test")
+        var data=listOf(SearchData("2023. 07. 01 (토)","에버랜드","42,000원"),
+            SearchData("2023. 07. 02 (일)","애벌랜드","10,000원"),
+            SearchData("엘리시움","test2","test2"),
+            SearchData("2023. 07. 04 (화)","test2","test2"),
+            SearchData("마라탕","test2","test2"),
+            SearchData("test2","test2","test2"),
+            SearchData("test2","test2","test2"),
+            SearchData("고기","test2","test2"),
+            SearchData("test2","test2","test2"),
+            SearchData("test2","test2","test2"),
+            SearchData("갈비","test2","test2"),
         )
 
         binding.recyclerView.apply{

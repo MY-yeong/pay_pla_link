@@ -17,28 +17,55 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="vertical" style="@style/groupStylewhite_A700">
-                <View
-                    android:background="@drawable/rectangle_bg_gray_200_radius_10"
-                    android:id="@+id/viewFrame"
-                    android:layout_gravity="end"
-                    android:layout_height="@dimen/_1pxv"
-                    android:layout_marginBottom="@dimen/_12pxv"
-                    android:layout_marginEnd="@dimen/_17pxh"
-                    android:layout_marginStart="@dimen/_17pxh" android:layout_width="@dimen/_289pxh"/>
-            </LinearLayout>
-
-            /*
-                <SearchView
-                    android:id="@+id/search_view"
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarToolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:iconifiedByDefault="false"
-                    android:queryHint="장소 검색"/>
+                    app:contentInsetStart="0dp">
 
-                */
+
+                    <LinearLayout
+                        android:id="@+id/linearRownextone"
+                        style="@style/groupStylewhite_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="horizontal"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageNextOne"
+                            android:layout_width="@dimen/_18pxh"
+                            android:layout_height="@dimen/_24pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_18pxv"
+                            android:layout_marginBottom="@dimen/_17pxv"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_next1"
+                            tools:ignore="ContentDescription"
+                            tools:src="@drawable/img_next1" />
+
+                        <TextView
+                            android:id="@+id/txtH"
+                            style="@style/txtPretendardbold20"
+                            android:layout_width="200dp"
+                            android:layout_height="24dp"
+                            android:layout_marginStart="@dimen/_120pxh"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_marginEnd="@dimen/_141pxh"
+                            android:layout_marginBottom="@dimen/_18pxv"
+                            android:layout_weight="0.81"
+                            android:ellipsize="end"
+                            android:letterSpacing="0.06"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:singleLine="true"
+                            android:text="@string/lbl9" />
+
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+            </LinearLayout>
+
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
@@ -52,4 +79,5 @@
 
         </LinearLayout>
     </LinearLayout>
+
 </layout>

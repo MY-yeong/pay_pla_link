@@ -16,9 +16,8 @@ class NoticeDetailActivity : AppCompatActivity() {
 
         val data = intent.getParcelableExtra<SearchData>("data")
 
-        binding.detailName.text = data!!.name
-        binding.detailIntro.text = data!!.intro
-        binding.detailAddr.text = data!!.addr
+        binding.detailName.text = data!!.date
+        binding.detailIntro.text = data!!.place
         binding.detailPrice.text = data!!.price
 
 
