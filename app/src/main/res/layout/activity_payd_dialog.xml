@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/linearRow42000"
+        android:layout_gravity="center"
+        style="@style/groupStylewhite_A700cornerRadius"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="@dimen/_14pxv"
+        android:layout_marginEnd="9dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                style="@style/txtPretendardbold23"
+                android:id="@+id/content"
+                android:layout_marginTop="@dimen/_15pxh"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:text="결제 내역을 \n 삭제하시겠습니까?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/btnSolidRounded_6"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ok"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="삭제"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/btnSolidRounded_5"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="취소"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

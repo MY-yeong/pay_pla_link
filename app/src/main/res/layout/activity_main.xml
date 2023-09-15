@@ -59,7 +59,7 @@
                             android:letterSpacing="0.06"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@string/lbl9" />
+                            android:text="@string/lbl99" />
 
                     </LinearLayout>
                 </androidx.appcompat.widget.Toolbar>
