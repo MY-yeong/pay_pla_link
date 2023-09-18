@@ -203,7 +203,7 @@
                         tools:src="@drawable/img_call" />
 
                     <ImageButton
-                        android:id="@+id/imageUpload"
+                        android:id="@+id/kakaolink"
                         android:scaleType="centerCrop"
                         android:padding="0sp"
                         android:background="@android:color/transparent"
